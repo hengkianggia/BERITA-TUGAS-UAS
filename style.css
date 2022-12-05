@@ -1,0 +1,657 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+/* HEADER */
+
+header .tanggal {
+  width: 100%;
+  height: 45px;
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+}
+.tanggal .tgl {
+  /* background-color: aqua; */
+  margin-right: 30px;
+}
+.tgl p {
+  font-size: 18px;
+  color: black;
+}
+.tanggal .latest {
+  display: flex;
+}
+.latest p,
+a {
+  font-size: 15px;
+  color: black;
+}
+.latest a {
+  text-decoration: none;
+  margin-left: 10px;
+  color: black;
+}
+.latest a:hover {
+  color: rgba(65, 91, 80, 1);
+}
+.tanggal .sosmed {
+  margin-left: auto;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sosmed a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  position: relative;
+  transform: translateX(-30px);
+}
+.sosmed a:hover {
+  color: rgba(65, 91, 80, 1);
+}
+.sosmed :nth-child(1) {
+  position: relative;
+  transform: translateX(-30px);
+}
+.sosmed i {
+  cursor: pointer;
+}
+
+/* AKHIR HEADER */
+
+.garisbiru {
+  width: 100%;
+  height: 4px;
+  background-color: rgba(65, 91, 80, 1);
+}
+
+/* NAV */
+
+nav {
+  width: 100%;
+  height: 60px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+.logo {
+  color: white;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: 900;
+  padding: 15px 15px;
+  background-color: rgba(65, 91, 80, 1);
+}
+.logo a {
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+}
+.pilihan {
+  width: 70%;
+}
+.pilihan ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.pilihan li {
+  list-style: none;
+}
+.pilihan li a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+}
+.pilihan .active {
+  border-bottom: 2px solid yellow;
+  padding-bottom: 10px;
+}
+.pilihan li a:hover {
+  color: yellow;
+}
+.search {
+  position: relative;
+}
+.search input {
+  width: 200px;
+  height: 30px;
+  border: 0px;
+  padding-left: 33px;
+}
+.search i {
+  position: absolute;
+  left: 10px;
+  top: 8px;
+}
+
+/* AKHIR NAV */
+
+/* MAIN */
+.headline {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+.headline .kiri {
+  height: 100%;
+  width: 55%;
+  background-color: rgb(82, 82, 82);
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  background-position: center;
+}
+.kiri a {
+  width: 100%;
+}
+.kiri p,
+h1 {
+  color: white;
+}
+.headline .kanan {
+  height: 100%;
+  width: 43%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.headline .kanan .bagian {
+  width: 100%;
+  height: 48%;
+  display: flex;
+  justify-content: space-between;
+}
+.suberita {
+  width: 48.5%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  background-position: center;
+  background-size: cover;
+}
+.suberita h2,
+p {
+  color: white;
+}
+/* AKHIR MAIN */
+
+/* ARTICLE */
+article {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -120px;
+}
+aside {
+  height: 300vh;
+}
+.left {
+  width: 63%;
+  margin-left: 30px;
+}
+.left .leftkonten {
+  width: 100%;
+  height: 110vh;
+  padding: 30px 15px;
+  border: 2px solid rgb(163, 163, 163);
+  margin-bottom: 25px;
+}
+.leftkonten .kategori {
+  width: 16%;
+  height: 50px;
+  background-color: rgba(65, 91, 80, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.kategori h1 {
+  font-size: 25px;
+}
+.leftkonten .isian {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+.isian .gede {
+  width: 47%;
+  height: 100%;
+}
+.gede .foto {
+  width: 100%;
+  height: 40%;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 20px;
+}
+.gede p {
+  text-align: justify;
+  color: black;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.gede .tombol a {
+  text-decoration: none;
+}
+.gede .tombol a:hover {
+  color: rgb(49, 97, 104);
+}
+.isian .kecil {
+  height: 100%;
+}
+.kecil .isiankecil {
+  width: 100%;
+  height: 140px;
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.isiankecil .gambar {
+  width: 200%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  margin-right: 15px;
+}
+.rincian h2 {
+  font-size: 25px;
+}
+.rincian p {
+  font-size: 15px;
+  color: black;
+}
+.isian .kecil {
+  width: 51%;
+  height: 100%;
+}
+.left .leftkonten2 {
+  width: 100%;
+  height: 154vh;
+  display: flex;
+  justify-content: space-between;
+}
+.leftkonten2 .side {
+  width: 48.5%;
+  height: 100%;
+  border: 2px solid rgb(163, 163, 163);
+  padding: 30px 15px;
+}
+.side .kategori {
+  width: 32%;
+  height: 50px;
+  background-color: rgba(65, 91, 80, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.side h1 {
+  font-size: 25px;
+}
+.side .foto {
+  width: 100%;
+  height: 25%;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 20px;
+}
+.side p {
+  text-align: justify;
+  color: black;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.side .tombol {
+  margin-bottom: 30px;
+}
+.side .tombol a {
+  text-decoration: none;
+}
+.side .tombol a:hover {
+  color: rgba(65, 91, 80, 1);
+}
+.side .subside {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.subside .gariss {
+  width: 100%;
+  height: 3px;
+  background-color: rgb(163, 163, 163);
+}
+.subside .subside_konten {
+  width: 100%;
+  height: 90%;
+  display: flex;
+}
+.subside_konten .foto {
+  width: 75%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  margin-right: 20px;
+}
+.right {
+  width: 31%;
+  margin-right: 30px;
+}
+.right .rightkonten {
+  width: 100%;
+  height: 110vh;
+  padding: 30px 15px;
+  border: 2px solid rgb(163, 163, 163);
+  background-color: white;
+  z-index: -1;
+  position: relative;
+}
+
+.rightkonten .morenews {
+  width: 50%;
+  height: 50px;
+  background-color: rgba(65, 91, 80, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.morenews h1 {
+  font-size: 25px;
+}
+.rightkonten .isikonten {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.rightkonten .isian {
+  width: 100%;
+  height: 140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.isian .isiankanan {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.isian .gambar {
+  width: 250%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  margin-right: 15px;
+}
+/* AKHIR ARTICLE */
+
+/* QUOTE */
+.quote {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  padding: 65px;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.quote h1 {
+  font-size: 40px;
+}
+.quote p {
+  font-size: 20px;
+  text-align: center;
+}
+/* AKHIR QUOTE */
+
+/* SPESIIFIK */
+.spesifik {
+  width: 100%;
+  height: 500px;
+  padding: 0 30px;
+  margin-bottom: 100px;
+}
+.spesifik h1 {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+.spesifik .bungkus {
+  width: 100%;
+  height: 91%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bungkus .bungkuss {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+.popo h2 {
+  margin-bottom: 15px;
+}
+.popo p {
+  color: black;
+}
+.bungkuss h1 {
+  font-size: 40px;
+  color: black;
+}
+.bungkus .gambar {
+  width: 47%;
+  height: 85%;
+  background-position: center;
+  background-size: cover;
+}
+/* AKHIR SPESIFIK */
+
+/* CATEGORY */
+.category {
+  width: 100%;
+  height: 500px;
+  margin-bottom: 50px;
+  padding: 20px 30px;
+  background-position: center;
+  background-size: cover;
+}
+.category .judul {
+  width: 100%;
+  height: 18%;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.judul .kiri h1 {
+  font-size: 45px;
+  text-decoration: none;
+}
+.judul .kiri p {
+  font-size: 20px;
+}
+.judul a {
+  width: 190px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  position: relative;
+}
+.judul a:hover {
+  border: 1px solid rgba(65, 91, 80, 1);
+  color: rgba(65, 91, 80, 1);
+  transform: translateX(-10px);
+  transition: 0.5s ease;
+}
+.category .konten {
+  width: 100%;
+  height: 77%;
+  display: flex;
+  justify-content: space-between;
+}
+.konten .isian {
+  width: 32%;
+  height: 100%;
+  position: relative;
+}
+.category .isian .foto {
+  width: 100%;
+  height: 85%;
+  background-position: center;
+  background-size: cover;
+}
+.isian .deskripsi {
+  width: 100%;
+  height: 15%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5px;
+}
+.deskripsi a {
+  color: black;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+}
+.deskripsi a:hover {
+  color: rgba(65, 91, 80, 1);
+}
+
+/* VIDEO */
+.containervideoo {
+  width: 100%;
+  height: 140vh;
+  padding: 15px 30px;
+}
+.containervideoo .judul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.containervideoo h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: rgba(65, 91, 80, 1);
+}
+.containervideoo .line {
+  width: 87%;
+  height: 3px;
+  background-color: rgba(65, 91, 80, 1);
+}
+.containervideoo .video {
+  width: 100%;
+  height: 420px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  align-items: center;
+}
+.video .itemvideo {
+  width: 49%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* .itemvideo iframe {
+  width: 632px;
+} */
+.itemvideo a {
+  background-color: black;
+  height: 64px;
+  width: 100%;
+  color: white;
+  font-size: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+}
+/* AKHIR VIDEO */
+
+/* FOOTER */
+footer {
+  width: 100%;
+  height: 60vh;
+  background-color: rgba(65, 91, 80, 1);
+  padding: 20px 30px;
+}
+footer input {
+  width: 100%;
+  height: 40px;
+  padding: 0 20px;
+  margin-bottom: 50px;
+}
+footer .footkategori {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.footkategori .label {
+  width: 10%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.label h2 {
+  font-size: 25px;
+  color: white;
+  margin-bottom: 20px;
+}
+.label ul a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: lighter;
+}
+.label ul a:hover {
+  color: yellow;
+}
+.label ul li {
+  list-style: none;
+  margin-bottom: 15px;
+}
+/* AKHIR FOOTER */
